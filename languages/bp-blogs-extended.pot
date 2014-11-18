@@ -1,0 +1,328 @@
+# Copyright (C) 2014 BP Blogs Extended
+# This file is distributed under the same license as the BP Blogs Extended package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BP Blogs Extended 1.0.0-alpha\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/bp-blogs-extended\n"
+"POT-Creation-Date: 2014-11-18 18:21:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: bp-blogs-extended.php:233
+msgid "BuddyPress Site&#39;s profile page"
+msgstr ""
+
+#: bp-blogs-extended.php:234
+msgid "Want a custom front page for your Site&#39;s profile page? Simply drop some widgets here."
+msgstr ""
+
+#: bp-blogs-extended.php:258
+msgid "Ouch!! Please upgrade to BuddyPress %s to use this widget!"
+msgstr ""
+
+#: includes/actions.php:19 includes/actions.php:72 includes/functions.php:660
+#: includes/functions.php:709
+msgid "We were not able to perform this action, please try again later"
+msgstr ""
+
+#: includes/actions.php:91
+msgid "Settings saved."
+msgstr ""
+
+#: includes/actions.php:95
+msgid "You cannot update this site&#39;s options."
+msgstr ""
+
+#: includes/actions.php:103
+msgid "The post type section is a demo, it will not affect BuddyPress features for now."
+msgstr ""
+
+#: includes/activity.php:18
+msgid "New site update"
+msgstr ""
+
+#: includes/activity.php:20
+msgid "Site Updates"
+msgstr ""
+
+#: includes/activity.php:27
+msgid "New site subscription"
+msgstr ""
+
+#: includes/activity.php:29
+msgid "Site Subscription"
+msgstr ""
+
+#: includes/activity.php:173 includes/activity.php:240
+msgid "%1$s posted an update on the site %2$s"
+msgstr ""
+
+#: includes/activity.php:197 includes/functions.php:681
+msgid "%1$s subscribed to the site %2$s"
+msgstr ""
+
+#: includes/filters.php:116
+msgid "%1$s %3$s %2$s"
+msgstr ""
+
+#: includes/functions.php:513
+msgctxt "Single Blog members screen nav"
+msgid "Members <span>%s</span>"
+msgstr ""
+
+#: includes/functions.php:523
+msgid "Home"
+msgstr ""
+
+#: includes/functions.php:539
+msgctxt "Single Blog activity screen nav"
+msgid "Activity"
+msgstr ""
+
+#: includes/functions.php:557
+msgctxt "Single Blog manage screen nav"
+msgid "Manage"
+msgstr ""
+
+#: includes/functions.php:575
+msgctxt "Single Blog setting screen"
+msgid "Edit Settings"
+msgstr ""
+
+#: includes/functions.php:592
+msgctxt "Single Blog photo screen"
+msgid "Edit Photo"
+msgstr ""
+
+#: includes/functions.php:632
+msgctxt "Profile activity screen sub nav"
+msgid "Sites"
+msgstr ""
+
+#: includes/functions.php:674
+msgid "You successfully subscribed to the site."
+msgstr ""
+
+#: includes/functions.php:723
+msgid "You successfully unsubscribed from the site."
+msgstr ""
+
+#: includes/navbar.php:235
+msgid "You do not have access to this page."
+msgstr ""
+
+#: includes/screens.php:90
+msgid "The Site profile photo was deleted successfully!"
+msgstr ""
+
+#: includes/screens.php:92
+msgid "There was a problem deleting the Site profile photo; please try again."
+msgstr ""
+
+#: includes/screens.php:143
+msgid "There was a problem cropping the Site profile photo."
+msgstr ""
+
+#: includes/screens.php:145
+msgid "The new Site profile photo was uploaded successfully."
+msgstr ""
+
+#: includes/template.php:36
+msgid "No Admins"
+msgstr ""
+
+#: includes/template.php:48
+msgid "Profile of %s"
+msgstr ""
+
+#: includes/template.php:58
+msgid "Profile picture of %s"
+msgstr ""
+
+#: includes/template.php:123
+msgid "Site Photo"
+msgstr ""
+
+#: includes/template.php:239 includes/template.php:240
+msgid "View Details"
+msgstr ""
+
+#: includes/template.php:273
+msgid "Locked"
+msgstr ""
+
+#: includes/template.php:276
+msgid "Hidden"
+msgstr ""
+
+#: includes/template.php:278
+msgid "Open"
+msgstr ""
+
+#: includes/template.php:326 includes/template.php:327
+msgid "Unsubscribe"
+msgstr ""
+
+#: includes/template.php:342 includes/template.php:343
+msgid "Subscribe"
+msgstr ""
+
+#: includes/template.php:399
+msgid "The activity of the sites I&#39;m part of."
+msgstr ""
+
+#: includes/template.php:400
+msgid "My Sites <span>%s</span>"
+msgstr ""
+
+#: includes/template.php:479
+msgid "Activate the checkbox(es) to track the post type(s)."
+msgstr ""
+
+#: templates/blogs/single/activity/post-form.php:29
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#: templates/blogs/single/activity/post-form.php:39
+msgid "Post Update"
+msgstr ""
+
+#: templates/blogs/single/activity.php:12
+msgid "RSS Feed"
+msgstr ""
+
+#: templates/blogs/single/activity.php:12
+msgid "RSS"
+msgstr ""
+
+#: templates/blogs/single/activity.php:17
+msgid "Show:"
+msgstr ""
+
+#: templates/blogs/single/activity.php:19
+msgid "&mdash; Everything &mdash;"
+msgstr ""
+
+#: templates/blogs/single/blog-header.php:13
+msgid "Site Admins"
+msgstr ""
+
+#: templates/blogs/single/members.php:19
+msgid "Order By:"
+msgstr ""
+
+#: templates/blogs/single/members.php:21
+msgid "Last Active"
+msgstr ""
+
+#: templates/blogs/single/members.php:24
+msgid "Alphabetical"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:14
+msgid "General settings"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:16
+msgid "Site Name"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:19
+msgid "Site Description"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:24
+msgid "Members settings"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:28
+msgid "Allow community members to subscibe to your site"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:30
+msgid "Subscribers will become members of your site."
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:34
+msgid "Allow your site members to publish activity updates"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:36
+msgid "By default, only site administrators can publish updates."
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:41
+msgid "Post types tracking settings"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:45
+msgid "Discourage search engines from indexing this site"
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:47
+msgid "If this setting is on, no post types will be tracked in the activity stream and the site will not be visible in the sites directory."
+msgstr ""
+
+#: templates/blogs/single/settings/general.php:58
+msgid "Save Changes"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:11
+msgid "Change Site&#39;s Photo"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:19
+msgid "Upload an image to use as a profile photo for this site. The image will be shown on the site&#39;s details page, and in search results."
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:23
+msgid "Upload Image"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:29
+msgid "If you'd like to remove the existing site&#39;s profile photo but not upload a new one, please use the delete site&#39;s profile photo button."
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:37
+#: templates/blogs/single/settings/photo.php:38
+msgid "Delete Site Profile Photo"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:49
+msgid "Crop Profile Photo"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:51
+msgid "Profile photo to crop"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:54
+msgid "Profile photo preview"
+msgstr ""
+
+#: templates/blogs/single/settings/photo.php:57
+msgid "Crop Image"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "BP Blogs Extended"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://imathi.eu/tag/bp-blogs-extended"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "BP Blogs Extended is a plugin to add single items to BuddyPress blogs component."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://imathi.eu/"
+msgstr ""

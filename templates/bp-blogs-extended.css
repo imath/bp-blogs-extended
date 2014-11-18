@@ -1,0 +1,35 @@
+#buddypress div.blog-button {
+	display:inline-block;
+	margin-left:5px;
+}
+
+body.blogs.manage #buddypress #settings-form ul li,
+body.blogs.home #buddypress .front-widgets .bpb-extended-widget ul li {
+	list-style: none;
+	margin-left: 0;
+}
+
+
+body.blogs.home #buddypress .front-widgets .bpb-extended-widget {
+	width:30%;
+	margin:5px 10px;
+	float:left;
+}
+
+body.blogs.home #buddypress .front-widgets .bpb-extended-widget h3 {
+	border-bottom:solid 1px #ccc;
+	font-size: 90%;
+}
+
+body.blogs.home #buddypress .front-widgets  .bpb-extended-widget:not(.widget_text) h3 {
+ 	margin:5px 0;
+}
+
+body.blogs.home #buddypress .front-widgets .widget_text h3 {
+ 	border:none;
+}
+
+body.blogs.home #buddypress .front-widgets .widget_text {
+	width:100%;
+	margin:5px 0;
+}
