@@ -38,7 +38,7 @@ function bpb_extended_filter_user_blogs( $args = array() ) {
 
 		$current_blog = bpb_extended_current_blog();
 		$user_blogs   = bpb_extended_get_user_blog_ids( $args['user_id'] );
-		$user_blogs   = wp_list_pluck( $user_blogs, 'userblog_id' );
+		$user_blogs   = wp_list_pluck( $user_blogs, 'blog_id' );
 
 		if ( ! empty( $current_blog ) && empty( $current_blog->is_public ) ) {
 			// user is not a member

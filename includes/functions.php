@@ -349,9 +349,54 @@ function bpb_extended_get_user_blog_ids( $user_id = 0 ) {
 		return $bpb_extended->user_blogs[ $user_id ];
 	}
 
-	// Get user blogs
-	$blogs = get_blogs_of_user( $user_id );
+	/**
+	 * Get user blogs (get_blogs_of_user() is not returning the blogs public parameter :( )
+	 * we need it to have a correct count if current user != displayed user
+	 */
+	$user_metas = get_user_meta( $user_id );
+	if ( empty( $user_metas ) ) {
+		return $blogs;
+	}
 
+	// Get the user's blogs id
+	foreach ( array_keys( $user_metas ) as $meta_key ) {
+		if ( preg_match( '/' . $wpdb->base_prefix. '(\d*)_capabilities/', $meta_key, $matches ) ) {
+			if ( ! empty( $matches[1] ) ) {
+				$blogs[] = intval( $matches[1] );
+			}
+		} else if ( $wpdb->base_prefix. 'capabilities' === $meta_key ) {
+			$blogs[] = 1;
+		}
+	}
+
+	if ( empty( $blogs ) ) {
+		return $blogs;
+	}
+
+	// Only super admins and loggedin user can see all their blogs (including the not public ones)
+	$public = (int) ( ! is_super_admin() && $user_id != bp_loggedin_user_id() );
+
+	$sql = array(
+		'select' => "SELECT * FROM $wpdb->blogs",
+		'where'  => array(
+			'in'       => 'blog_id IN (' . join( ',', wp_parse_id_list( $blogs ) ) .')',
+			'deleted'  => $wpdb->prepare( 'deleted = %d', 0 ),
+			'spam'     => $wpdb->prepare( 'spam = %d', 0 ),
+			'mature'   => $wpdb->prepare( 'mature = %d', 0 ),
+			'archived' => $wpdb->prepare( 'mature = %d', 0 ),
+		),
+	);
+
+	if ( ! empty( $public ) ) {
+		$sql['where']['public'] = $wpdb->prepare( 'public = %d', $public );
+	}
+
+	$sql['where'] = 'WHERE ' . join( ' AND ', $sql['where'] );
+
+	// Get blogs that can be used (not deleted, not spam...)
+	$blogs = $wpdb->get_results( join( ' ', $sql ) );
+
+	// Put them in a global to avoid requesting for them more than once per load
 	$bpb_extended->user_blogs[ $user_id ] = $blogs;
 
 	// Return the list of blogs
