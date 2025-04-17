@@ -1,6 +1,8 @@
 BP Blogs Extended
 =================
 
+**This component is no more maintained and has been archived.**
+
 Single items for the BuddyPress Blogs component. Some of the features are experimental, you'll need to set WP_DEBUG to true in your WordPress wp-config.php file to test them.
 
 
